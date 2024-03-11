@@ -10,12 +10,14 @@
   },
   "homepage": "https://ayco.io/gh/cozy",
   "scripts": {
+    "sandbox": "arc sandbox",
     "start": "astro dev",
     "build": "astro build",
     "publish:patch": "npm version patch && npm publish --access public",
     "publish:minor": "npm version minor && npm publish --access public"
   },
   "devDependencies": {
+    "@architect/architect": "^11.0.5",
     "astro": "^3.2.0"
   },
   "dependencies": {
