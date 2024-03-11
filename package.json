@@ -21,7 +21,6 @@
     "astro": "^3.2.0"
   },
   "dependencies": {
-    "@astrojs-aws/adapter": "^0.0.20",
     "@astrojs/prefetch": "^0.4.0",
     "@astrojs/vercel": "^5.0.2",
     "@ayco/astro-resume": "^0.3.9",
