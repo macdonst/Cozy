@@ -1,7 +1,10 @@
 @app
 cozy
 
-@static
-folder dist
-
 @http
+/*
+  method any
+  src ./server
+
+@static
+folder ./server/dist/client

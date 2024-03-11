@@ -12,7 +12,7 @@
   "scripts": {
     "sandbox": "arc sandbox",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build --experimental-ssr ; cp index.mjs server/index.mjs",
     "publish:patch": "npm version patch && npm publish --access public",
     "publish:minor": "npm version minor && npm publish --access public"
   },
@@ -21,11 +21,13 @@
     "astro": "^3.2.0"
   },
   "dependencies": {
+    "@astrojs-aws/adapter": "^0.0.20",
     "@astrojs/prefetch": "^0.4.0",
     "@astrojs/vercel": "^5.0.2",
     "@ayco/astro-resume": "^0.3.9",
     "@extractus/article-extractor": "^8.0.2",
     "astro-iconify": "^1.2.0",
+    "astro-lambda-adapter": "^0.1.2",
     "sass": "^1.68.0",
     "ultrahtml": "^1.5.2"
   }
